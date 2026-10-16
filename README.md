@@ -176,6 +176,8 @@ Restores project dependencies.
 
 Builds the application.
 
+youtube link (https://youtu.be/JwMScQF-qqI) 
+
 Runs the unit tests.
 
 Reports whether the build and tests passed or failed.

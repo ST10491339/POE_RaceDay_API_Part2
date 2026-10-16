@@ -180,4 +180,22 @@ Runs the unit tests.
 
 Reports whether the build and tests passed or failed.
 
+10. Project Structure
+
+A typical project structure may look like this:
+
+POE_RaceDay_API/
+├── Controllers/
+├── Properties/
+├── Program.cs
+├── appsettings.json
+├── POE_RaceDay_API.csproj
+├── Tests/
+├── .github/
+│   └── workflows/
+│       └── dotnet.yml
+└── README.md
+
+The actual folder and file names may differ depending on the structure of the repository. Keep the existing project structure when adding the README.
+
 The workflow should use the .NET version specified by the project and should run the tests against the correct test project or solution.

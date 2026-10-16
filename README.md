@@ -51,3 +51,8 @@ Visual Studio, Visual Studio Code, or another compatible C# IDE.
 Git.
 
 A GitHub account for repository hosting and CI/CD.
+
+5. Installation and Setup
+
+Follow these steps to set up the project locally.
+

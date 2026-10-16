@@ -79,3 +79,11 @@ Step 3: Build the project
 Compile the project to check for errors:
 
 dotnet build
+
+Step 4: Run the API
+
+Start the application using:
+
+dotnet run
+
+The terminal will display the local URL where the API is running. Use the displayed address to access the API.

@@ -73,3 +73,9 @@ Step 2: Restore dependencies
 Run the following command from the directory containing the API project file:
 
 dotnet restore
+
+Step 3: Build the project
+
+Compile the project to check for errors:
+
+dotnet build

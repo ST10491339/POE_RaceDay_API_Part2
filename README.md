@@ -199,3 +199,41 @@ POE_RaceDay_API/
 The actual folder and file names may differ depending on the structure of the repository. Keep the existing project structure when adding the README.
 
 The workflow should use the .NET version specified by the project and should run the tests against the correct test project or solution.
+
+11. Troubleshooting
+
+The project does not build
+
+Check that the correct .NET SDK is installed.
+
+Run dotnet restore.
+
+Run dotnet build and review any error messages.
+
+The unit tests do not run
+
+Confirm that the test project exists.
+
+Check that the test framework and required packages are installed.
+
+Run dotnet test from the solution directory.
+
+Review any failed tests and their error messages.
+
+Authentication fails
+
+Check that the JWT configuration is correct.
+
+Confirm that the token is valid and has not expired.
+
+Verify that the request includes the correct Authorization header.
+
+Confirm that the endpoint requires the supplied authentication scheme.
+
+GitHub Actions fails
+
+Open the repository's Actions tab on GitHub.
+
+Select the failed workflow run.
+
+Review the logs to identify the failing build or test step.

@@ -109,3 +109,23 @@ Authorization: Bearer YOUR_JWT_TOKEN
 Requests without a valid token may be rejected by protected endpoints.
 
 Security note: Keep secret keys, passwords, database credentials, and other sensitive configuration values out of source control.
+
+7. API Testing
+
+The API can be tested using a suitable API testing tool, such as Swagger UI, Postman, or an equivalent tool, if configured for the project.
+
+Testing should cover:
+
+Successful API requests.
+
+Invalid or missing input.
+
+Expected HTTP status codes.
+
+Authentication and authorization.
+
+Error handling.
+
+Access to protected endpoints with valid and invalid tokens.
+
+The available endpoints and their HTTP methods should be confirmed from the project's controllers and API configuration.

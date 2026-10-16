@@ -22,4 +22,20 @@ Unit Testing
 
 GitHub Actions for CI/CD
 
+3. Project Features
 
+The project is designed to support the following features:
+
+Processing HTTP requests through API controllers.
+
+Managing race day-related data.
+
+Validating incoming requests.
+
+Securing protected endpoints using JWT authentication.
+
+Handling errors and returning appropriate HTTP responses.
+
+Testing controller functionality through unit tests.
+
+Automating build and test processes using GitHub Actions.

@@ -1,37 +1,31 @@
 
-name: .NET API CI/CD
+name: POE RaceDay API CI
 
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [main, master]
   pull_request:
-    branches:
-      - main
-      - master
+    branches: [main, master]
   workflow_dispatch:
 
 jobs:
   build-and-test:
-    name: Build and Run Unit Tests
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup .NET 8
+      - name: Install .NET 8
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0.x
+          dotnet-version: '8.0.x'
 
       - name: Restore Dependencies
-        run: dotnet restore
+        run: dotnet restore POE_RaceDay_API.Tests/POE_RaceDay_API.Tests.csproj
 
-      - name: Build API
-        run: dotnet build --configuration Release --no-restore
+      - name: Build API and Tests
+        run: dotnet build POE_RaceDay_API.Tests/POE_RaceDay_API.Tests.csproj --configuration Release
 
       - name: Run Unit Tests
-        run: dotnet test --configuration Release --no-build
-
+        run: dotnet test POE_RaceDay_API.Tests/POE_RaceDay_API.Tests.csproj --configuration Release --no-build --logger "console;verbosity=normal"

@@ -87,3 +87,25 @@ Start the application using:
 dotnet run
 
 The terminal will display the local URL where the API is running. Use the displayed address to access the API.
+
+6. Authentication
+
+The API uses JWT authentication to authenticate requests to protected endpoints.
+
+To access a protected endpoint:
+
+Obtain a valid JWT token using the authentication functionality provided by the project.
+
+Copy the token.
+
+Include the token in the HTTP request's Authorization header.
+
+Use the Bearer authentication scheme.
+
+Example:
+
+Authorization: Bearer YOUR_JWT_TOKEN
+
+Requests without a valid token may be rejected by protected endpoints.
+
+Security note: Keep secret keys, passwords, database credentials, and other sensitive configuration values out of source control.

@@ -39,3 +39,15 @@ Handling errors and returning appropriate HTTP responses.
 Testing controller functionality through unit tests.
 
 Automating build and test processes using GitHub Actions.
+
+4. Prerequisites
+
+Before running the project, ensure that you have installed:
+
+.NET SDK compatible with the project.
+
+Visual Studio, Visual Studio Code, or another compatible C# IDE.
+
+Git.
+
+A GitHub account for repository hosting and CI/CD.

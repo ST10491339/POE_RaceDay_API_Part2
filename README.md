@@ -155,3 +155,29 @@ Error handling.
 Access to protected endpoints with valid and invalid tokens.
 
 The available endpoints and their HTTP methods should be confirmed from the project's controllers and API configuration.
+
+9. Continuous Integration and Continuous Delivery (CI/CD)
+
+GitHub Actions is used to automate the project's build and testing process.
+
+The workflow should be stored in the following directory:
+
+.github/workflows/
+
+The workflow can be configured to run when changes are pushed to the repository or when a pull request is created.
+
+A typical CI workflow performs these steps:
+
+Checks out the repository.
+
+Installs the required .NET SDK.
+
+Restores project dependencies.
+
+Builds the application.
+
+Runs the unit tests.
+
+Reports whether the build and tests passed or failed.
+
+The workflow should use the .NET version specified by the project and should run the tests against the correct test project or solution.

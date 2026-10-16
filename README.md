@@ -96,6 +96,32 @@ To access a protected endpoint:
 
 Obtain a valid JWT token using the authentication functionality provided by the project.
 
+8. Unit Testing
+
+Unit tests are used to verify that individual components of the application behave as expected.
+
+The tests for this project should cover the four supplied API controllers and relevant authentication configuration behaviour, where applicable.
+
+Examples of areas to test include:
+
+Valid controller requests.
+
+Invalid input and validation errors.
+
+Expected responses and status codes.
+
+Error-handling scenarios.
+
+Authentication-related behaviour.
+
+To run the unit tests, navigate to the solution directory and execute:
+
+dotnet test
+
+Ensure that the test project is included in the solution and that the required test packages are installed.
+
+
+
 Copy the token.
 
 Include the token in the HTTP request's Authorization header.

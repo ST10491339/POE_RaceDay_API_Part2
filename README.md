@@ -56,3 +56,14 @@ A GitHub account for repository hosting and CI/CD.
 
 Follow these steps to set up the project locally.
 
+Step 1: Clone the repository
+
+Open a terminal and run:
+
+git clone <(https://github.com/ST10491339/POE_RaceDay_API_Part2)>
+
+Navigate to the project directory:
+
+cd POE_RaceDay_API
+
+Replace the repository URL with your actual GitHub repository URL.

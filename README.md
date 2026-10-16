@@ -67,3 +67,9 @@ Navigate to the project directory:
 cd POE_RaceDay_API
 
 Replace the repository URL with your actual GitHub repository URL.
+
+Step 2: Restore dependencies
+
+Run the following command from the directory containing the API project file:
+
+dotnet restore

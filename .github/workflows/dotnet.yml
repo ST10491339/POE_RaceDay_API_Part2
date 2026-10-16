@@ -10,22 +10,22 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install .NET 8
+      - name: Setup .NET 8
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
       - name: Restore Dependencies
-        run: dotnet restore POE_RaceDay_API.Tests/POE_RaceDay_API.Tests.csproj
+        run: dotnet restore POE_RaceDay_API.sln
 
-      - name: Build API and Tests
-        run: dotnet build POE_RaceDay_API.Tests/POE_RaceDay_API.Tests.csproj --configuration Release
+      - name: Build Solution
+        run: dotnet build POE_RaceDay_API.sln --configuration Release --no-restore
 
       - name: Run Unit Tests
-        run: dotnet test POE_RaceDay_API.Tests/POE_RaceDay_API.Tests.csproj --configuration Release --no-build --logger "console;verbosity=normal"
+        run: dotnet test POE_RaceDay_API.sln --configuration Release --no-build --logger "console;verbosity=normal"
